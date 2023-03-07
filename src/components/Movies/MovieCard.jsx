@@ -18,7 +18,7 @@ const MovieCard = ({ movie, selectMovie }) => {
                 style={{height: "100%", cursor: "pointer"}}
                 onClick={() => navigate(`/movies/${movie.id}`)}
             >
-                <Card.Img variant="top" src={image} style={{height: 300, objectFit: "cover"}} />
+                <Card.Img variant="top" src={image} style={{height: 360, objectFit: "contain"}} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
